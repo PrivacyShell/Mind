@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import styled from 'styled-components';
 
 import AllMessages from './AllMessages';
+import SkypeMessages from './SkypeMessages';
 
 const MessagesContainer = styled.div`
     width: 100%;
@@ -52,12 +53,12 @@ const Messages = () => {
         <MessagesContainer>
             <HeaderContainer>
                 <HeaderSubContainer>
-                    <HeaderTitle>All pending</HeaderTitle>
+                    <HeaderTitle>Pending</HeaderTitle>
                     <HeaderDesc>Priority</HeaderDesc>
                 </HeaderSubContainer>
             </HeaderContainer>
             <MainContainer>
-                <AllMessages />
+                {/* <AllMessages /> */}
             </MainContainer>
         </MessagesContainer>
     ) 

@@ -170,9 +170,162 @@
                     "type": "skype"
                 }
 
+            ],
+            "all": [
+                {
+                    "id": "94622-naoed-m8b8b",
+                    "subject": "Are we still on for 12?",
+                    "body": "Facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Duis aute irure dolor in reprehenderit in voluptate velit. Qui officia deserunt mollit anim id est laborum. Et harum quidem rerum facilis est et expedita distinctio. Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo. Duis aute irure dolor in reprehenderit in voluptate velit. Do eiusmod tempor incididunt ut labore et dolore magna aliqua. At vero eos et accusamus.",
+                    "sentDate": "July 4, 2019",
+                    "sender": "Clark Sampson",
+                    "type": "email"
+                },
+                {
+                    "id": "99377-dtinh-9j4b0",
+                    "subject": "13 email marketing trends you must know",
+                    "body": "Itaque earum rerum hic tenetur a sapiente delectus. Et harum quidem rerum facilis est et expedita distinctio. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam. Ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+                    "sentDate": "July 4, 2019",
+                    "sender": "Mike Toms",
+                    "type": "email"
+                },
+                {
+                    "id": "16477-diplj-n7d2i",
+                    "subject": "I was right - and that’s not good for you",
+                    "body": "Duis aute irure dolor in reprehenderit in voluptate velit. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Architecto beatae vitae dicta sunt explicabo. Architecto beatae vitae dicta sunt explicabo. Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.",
+                    "sentDate": "July 20, 2019",
+                    "sender": "Mitch Hedberg",
+                    "type": "email"
+                },
+                {
+                    "id": "89214-ruuen-9s7n3",
+                    "subject": "We’re starting in 5 HOURS",
+                    "body": "Laboris nisi ut aliquip ex ea commodo consequat. Qui officia deserunt mollit anim id est laborum. Cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia. Itaque earum rerum hic tenetur a sapiente delectus. Corrupti quos dolores et quas molestias excepturi sint occaecati. Et harum quidem rerum facilis est et expedita distinctio. Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.",
+                    "sentDate": "July 14, 2019",
+                    "sender": "Douglas Gilmour",
+                    "type": "email"
+                },
+                {
+                    "id": "98274-nnvoo-m8s3f",
+                    "subject": "How to Google-proof your mobile site in 2019",
+                    "body": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Nihil molestiae consequatur, vel illum qui dolorem eum. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam. Inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+                    "sentDate": "July 4, 2019",
+                    "sender": "Fanny May",
+                    "type": "email"
+                },
+                {
+                    "id": "84932-qoosp-n8d3l",
+                    "subject": "Missed you, how’s Thursday?",
+                    "body": "Nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
+                    "sentDate": "June 28, 2019",
+                    "sender": "Gloria Thomas",
+                    "type": "email"
+                },
+                {
+                    "id": "99374-uwstf-7g8s3",
+                    "subject": " Here is the calendar of tomorrow’s meeting",
+                    "body": "Esse cillum dolore eu fugiat nulla pariatur. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui officia deserunt mollit anim id est laborum. Itaque earum rerum hic tenetur a sapiente delectus. Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo. Ut enim ad minim veniam, quis nostrud exercitation ullamco. At vero eos et accusamus.",
+                    "sentDate": "June 4, 2019",
+                    "sender": "Sandy Paterson",
+                    "type": "email"
+                },
+                {
+                    "id": "47924-ubwkn-1n3d6",
+                    "subject": "If possible can you please give me an appointment",
+                    "body": "Itaque earum rerum hic tenetur a sapiente delectus. Et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque. Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Excepteur sint occaecat cupidatat non proident, sunt in culpa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+                    "sentDate": "July 4, 2019",
+                    "sender": "John Stamos",
+                    "type": "email"
+                },
+                {
+                    "id": "71946-cgose-m6c0x",
+                    "subject": "Reaching out for partnership opportunity",
+                    "body": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat. Sed ut perspiciatis unde omnis iste natus error sit voluptatem. Totam rem aperiam. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+                    "sentDate": "July 4, 2019",
+                    "sender": "Jason Mewes",
+                    "type": "email"
+                },
+                {
+                    "id": "96731-jomks-9j3v7",
+                    "subject": "Connecting Basheer with Mark",
+                    "body": "Itaque earum rerum hic tenetur a sapiente delectus. Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo. At vero eos et accusamus. Ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+                    "sentDate": "July 4, 2019",
+                    "sender": "Louis Kite",
+                    "type": "email"
+                },
+                {
+                    "id": "68365-keoos-h8a8h",
+                    "body": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.",
+                    "sentDate": "June 22, 2019",
+                    "sender": "Ashley Lee",
+                    "phoneNumber": "123-456-7890",
+                    "type": "whatsapp"
+                },
+                {
+                    "id": "68211-pogwn-n9g5s",
+                    "body": "Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+                    "sentDate": "June 29, 2019",
+                    "sender": "Brooke Walters",
+                    "phoneNumber": "123-456-7890",
+                    "type": "whatsapp"
+                },
+                {
+                    "id": "98736-keyos-j8f5g",
+                    "body": "Inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+                    "sentDate": "July 13, 2019",
+                    "sender": "Mike Ellis",
+                    "phoneNumber": "123-456-7890",
+                    "type": "whatsapp"
+                },
+                {
+                    "id": "47654-drfws-c4a3d",
+                    "body": "Itaque earum rerum hic tenetur a sapiente delectus.",
+                    "sentDate": "July 22, 2019",
+                    "sender": "Dan Ferr",
+                    "phoneNumber": "123-456-7890",
+                    "type": "telegram"
+                },
+                {
+                    "id": "68211-pogwn-n9g5s",
+                    "body": "Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.",
+                    "sentDate": "July 02, 2019",
+                    "sender": "Denver Topping",
+                    "phoneNumber": "123-456-7890",
+                    "type": "telegram"
+                },
+                {
+                    "id": "98736-keyos-j8f5g",
+                    "body": "Ut enim ad minim veniam, quis nostrud exercitation ullamco. At vero eos et accusamus.",
+                    "sentDate": "July 13, 2019",
+                    "sender": "Janice Peters",
+                    "phoneNumber": "123-456-7890",
+                    "type": "telegram"
+                },
+                {
+                    "id": "89461-rqabh-8nd4z",
+                    "body": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat. Sed ut perspiciatis unde omnis iste natus error sit voluptatem. Totam rem aperiam. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+                    "sentDate": "July 22, 2019",
+                    "sender": "Pamela Dawson",
+                    "phoneNumber": "123-456-7890",
+                    "type": "skype"
+                },
+                {
+                    "id": "68211-pogwn-n9g5s",
+                    "body": "Itaque earum rerum hic tenetur a sapiente delectus. Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.",
+                    "sentDate": "July 02, 2019",
+                    "sender": "Hunter Summers",
+                    "phoneNumber": "123-456-7890",
+                    "type": "skype"
+                },
+                {
+                    "id": "98736-keyos-j8f5g",
+                    "body": "At vero eos et accusamus. Ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+                    "sentDate": "July 13, 2019",
+                    "sender": "Tanya Davis",
+                    "phoneNumber": "123-456-7890",
+                    "type": "skype"
+                }
             ]
-                    
-               
+                           
         }    
     },
     {
@@ -181,9 +334,9 @@
         "firstName": "Jane",
         "lastName": "Doe",
         "rewards": {
-            "total": "563",
-            "pending": "42",
-            "accuracy": "80%" 
+            "total": "263",
+            "pending": "35",
+            "accuracy": "68%" 
         },
         "applications": {
             "email": [
