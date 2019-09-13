@@ -211,7 +211,7 @@ class SkypeSorted extends Component {
             <MessagesContainer>
                 <HeaderContainer>
                     <HeaderSubContainer>
-                        <HeaderTitle>Email Sorted</HeaderTitle>
+                        <HeaderTitle>Skype Sorted</HeaderTitle>
                         <HeaderDesc>Priority</HeaderDesc>
                     </HeaderSubContainer>
                 </HeaderContainer>

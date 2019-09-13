@@ -211,7 +211,7 @@ class WhatsappSorted extends Component {
             <MessagesContainer>
                 <HeaderContainer>
                     <HeaderSubContainer>
-                        <HeaderTitle>Telegram Sorted</HeaderTitle>
+                        <HeaderTitle>Whatsapp Sorted</HeaderTitle>
                         <HeaderDesc>Priority</HeaderDesc>
                     </HeaderSubContainer>
                 </HeaderContainer>
