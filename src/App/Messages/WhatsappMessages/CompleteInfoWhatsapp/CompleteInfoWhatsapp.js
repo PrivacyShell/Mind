@@ -35,10 +35,10 @@ const skype = data[0].applications.skype;
 
 const messages = emails.concat(whatsapp, telegram, skype);
 
-class CompleteInfoEmail extends Component {
+class CompleteInfoWhatsapp extends Component {
         
     render() {
-        return emails.map( item => {
+        return whatsapp.map( item => {
             if(item.id === this.props.id) {
                 return (
                     <InfoSection>
@@ -57,4 +57,4 @@ class CompleteInfoEmail extends Component {
       }
 }
 
-export default CompleteInfoEmail;
+export default CompleteInfoWhatsapp;

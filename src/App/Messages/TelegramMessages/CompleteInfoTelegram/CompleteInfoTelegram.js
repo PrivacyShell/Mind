@@ -38,7 +38,7 @@ const messages = emails.concat(whatsapp, telegram, skype);
 class CompleteInfoEmail extends Component {
         
     render() {
-        return emails.map( item => {
+        return telegram.map( item => {
             if(item.id === this.props.id) {
                 return (
                     <InfoSection>

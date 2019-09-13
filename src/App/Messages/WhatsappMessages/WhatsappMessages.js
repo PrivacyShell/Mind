@@ -1,7 +1,9 @@
-import React, { Fragment } from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import data from '../../../data/data.json';
+
+import CompleteInfoWhatsapp from '../../Messages/WhatsappMessages/CompleteInfoWhatsapp';
 
 const AllMessagesContainer = styled.div`
     
@@ -108,6 +110,18 @@ const MainContainer = styled.div`
     flex-direction: column;
 `;
 
+const BoxButtonContainer = styled.div`
+    width: 20px;
+`;
+
+const BoxButton = styled.button`
+    text-align: left;
+`;
+
+const Test = styled.div`
+    width: 500px;
+`;
+
 const emails = data[0].applications.email;
 const whatsapp = data[0].applications.whatsapp;
 const telegram = data[0].applications.telegram;
@@ -115,45 +129,74 @@ const skype = data[0].applications.skype;
 
 const messages = emails.concat(whatsapp, telegram, skype);
 
-const Whatsapp = () => {
-    return whatsapp.map(item => {
-        console.log(item)
-        return (
-            <AllMessagesContainer>
-                <MainMessagesContainer>
-                    <i class="far fa-plus-square"></i>
-                    <SenderContainer>
-                        <Sender>{item.sender}</Sender>
-                    </SenderContainer>
-                    <BodyContainer>
-                        <Body>{item.body}</Body>
-                    </BodyContainer>
-                    <TypeContainer>
-                        <Type>{item.type}</Type>
-                    </TypeContainer>
-                    <DateContainer>
-                        <Date>{item.sentDate}</Date>
-                    </DateContainer>
-                </MainMessagesContainer>
-            </AllMessagesContainer>
-        )  
-    })
-}
 
-const WhatsappMessages = () => {
-    return (
-        <MessagesContainer>
-            <HeaderContainer>
-                <HeaderSubContainer>
-                    <HeaderTitle>Whatsapp Pending</HeaderTitle>
-                    <HeaderDesc>Priority</HeaderDesc>
-                </HeaderSubContainer>
-            </HeaderContainer>
-            <MainContainer>
-                <Whatsapp />
-            </MainContainer>
-        </MessagesContainer>
-    ) 
+
+class WhatsappMessages extends Component {
+
+    constructor (props) {
+        super(props)
+  
+        this.state = {
+            id: '',
+            type: '',
+            boxOpen: false
+        };
+    }
+
+    handleBoxOpen(id) {
+        // alert(id);
+        // Do something with the id for example
+        this.setState({ [id]: !this.state[id] });
+        // Or
+        // this.setState({ boxOpen: !this.state.boxOpen });
+    }
+        
+        Messages = () => {
+        return whatsapp.map((item, i) => {
+            return (
+                <AllMessagesContainer>
+                    <MainMessagesContainer>
+                        <BoxButtonContainer key={i} dataId={item.id}>
+                            <BoxButton id={item.id} onClick={() => { this.handleBoxOpen(item.id); }}>
+                            <i class="far fa-plus-square"></i>
+                                {
+                                    this.state[item.id] ? <Test><CompleteInfoWhatsapp id={item.id} /> </Test> : ''
+                                }
+                            </BoxButton>
+                        </BoxButtonContainer>
+                        <SenderContainer>
+                            <Sender>{item.sender}</Sender>
+                        </SenderContainer>
+                        <BodyContainer>
+                            <Body>{item.body}</Body>
+                        </BodyContainer>
+                        <TypeContainer>
+                            <Type>{item.type}</Type>
+                        </TypeContainer>
+                        <DateContainer>
+                            <Date>{item.sentDate}</Date>
+                        </DateContainer>
+                    </MainMessagesContainer>
+                </AllMessagesContainer>
+            )  
+        })
+    }
+
+    render(){
+        return (
+            <MessagesContainer>
+                <HeaderContainer>
+                    <HeaderSubContainer>
+                        <HeaderTitle>All Pending</HeaderTitle>
+                        <HeaderDesc>Priority</HeaderDesc>
+                    </HeaderSubContainer>
+                </HeaderContainer>
+                <MainContainer>
+                    {this.Messages()}
+                </MainContainer>
+            </MessagesContainer>
+        ) 
+    }
 }
 
 export default WhatsappMessages;
