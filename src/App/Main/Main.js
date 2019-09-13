@@ -14,6 +14,11 @@ import Messages from '../Messages/Messages';
 import SkypeMessages from '../Messages/SkypeMessages';
 import TelegramMessages from '../Messages/TelegramMessages/index.js';
 import WhatsappMessages from '../Messages/WhatsappMessages/WhatsappMessages.js';
+import AllSorted from '../Messages/AllSorted/AllSorted.js';
+import EmailSorted from '../Messages/EmailSorted/EmailSorted.js';
+import SkypeSorted from '../Messages/SkypeSorted/SkypeSorted.js';
+import TelegramSorted from '../Messages/TelegramSorted/TelegramSorted.js';
+import WhatsappSorted from '../Messages/WhatsappSorted/WhatsappSorted.js';
 
 const SidebarMenu = styled.div`
     width: 280px;
@@ -111,24 +116,19 @@ class Main extends Component {
             screen3: <SkypeMessages />,
             screen4: <EmailMessages />,
             screen5: <TelegramMessages />,
-            screen6: <WhatsappMessages />
+            screen6: <WhatsappMessages />,
+            screen7: <AllSorted />,
+            screen8: <SkypeSorted />,
+            screen9: <EmailSorted />,
+            screen10: <TelegramSorted />,
+            screen11: <WhatsappSorted />
         };
         return screens[currentScreen];
     }
 
-    // toggleScreen(currentScreen) {
-    //     this.setState({ currentScreen });
-    //   }
-
     toggleScreen = (currentScreen) => {
         this.setState({ currentScreen });
     }
-
-    // handleRewards = () => {
-    //     this.setState({
-    //         rewardsOpen: !this.state.rewardsOpen
-    //     })
-    // }
 
     toggleDropdown = () => {
         this.setState({
@@ -138,19 +138,10 @@ class Main extends Component {
 
     toggleSecondaryDropdown = (e) => {
         const { id } = e.target;
-        console.log(id, "iiid")
         this.setState({
             secondaryDropdown: !this.state.secondaryDropdown
         })
     }
-
-    // showRewards = () => {
-    //     if(this.state.rewardsOpen) {
-    //         return (
-    //             <Rewards />
-    //         )
-    //     }
-    // }
 
     showDropdown = () => {
         const userOneApplications = Object.keys(data[0].applications);
@@ -170,21 +161,21 @@ class Main extends Component {
         return '';
     }
 
-    showSecondaryDropdown = () => {
-        const userOneApplications = Object.keys(data[0].applications);
-        console.log(data[0].applications, "hello")
+    // showSecondaryDropdown = () => {
+    //     const userOneApplications = Object.keys(data[0].applications);
+    //     console.log(data[0].applications, "hello")
 
-        if(this.state.secondaryDropdown) {
-            return (
-                <div>
-                    <SecondarySidebarListButton onClick={this.toggleSecondaryDropdown}>Sorted<i class="fas fa-chevron-down"></i></SecondarySidebarListButton>
-                    <SecondarySidebarListButton onClick={this.toggleSecondaryDropdown}>Pending<i class="fas fa-chevron-down"></i></SecondarySidebarListButton>
-                </div>
-            ) 
-        }
+    //     if(this.state.secondaryDropdown) {
+    //         return (
+    //             <div>
+    //                 <SecondarySidebarListButton onClick={this.toggleSecondaryDropdown}>Sorted<i class="fas fa-chevron-down"></i></SecondarySidebarListButton>
+    //                 <SecondarySidebarListButton onClick={this.toggleSecondaryDropdown}>Pending<i class="fas fa-chevron-down"></i></SecondarySidebarListButton>
+    //             </div>
+    //         ) 
+    //     }
 
-        return '';
-    }
+    //     return '';
+    // }
 
     render() {
         return (
@@ -193,22 +184,13 @@ class Main extends Component {
                     <Logo>
                         <img src={logo} alt="mind logo"/>
                     </Logo>
-                    {/* <SidebarButtonContainer>
-                        <SidebarButton onClick={this.handleRewards}>My rewards</SidebarButton>
-                    </SidebarButtonContainer> */}
                     <Sidebar toggleScreen={this.toggleScreen} />
-                    {/* <SidebarButtonContainer>
-                        <SidebarButton onClick={this.toggleDropdown}>Applications</SidebarButton>
-                        {this.showDropdown()}
-                    </SidebarButtonContainer> */}
                 </SidebarMenu>
                 <MainContainer>
                     <TopContainer>
                         <WelcomeBox />
                         <i class="fas fa-cog fa-3x"></i>
                     </TopContainer>
-                    {/* <Messages /> */}
-                    {/* {this.showRewards()} */}
                     <div>
                         {this.getScreen(this.state.currentScreen)}
                     </div>

@@ -112,11 +112,11 @@ class Sidebar extends Component {
                     // </div>
 
                     <div bsStyle="tabs" activeKey={this.state.key}>
-                        <SidebarListButton eventKey={1} title="screen1" onClick={() => this.handleSelect(1, 'screen1')}>All</SidebarListButton>
-                        <SidebarListButton eventKey={3} title="screen3" onClick={() => this.handleSelect(3, 'screen3')}>Skype</SidebarListButton>
-                        <SidebarListButton eventKey={4} title="screen4" onClick={() => this.handleSelect(4, 'screen4')}>Email</SidebarListButton>
-                        <SidebarListButton eventKey={4} title="screen4" onClick={() => this.handleSelect(4, 'screen5')}>Telegram</SidebarListButton>
-                        <SidebarListButton eventKey={4} title="screen4" onClick={() => this.handleSelect(4, 'screen6')}>Whatsapp</SidebarListButton>
+                        <SidebarListButton eventKey={1} title="All" onClick={() => this.handleSelect(1, 'screen1')}>All</SidebarListButton>
+                        <SidebarListButton eventKey={3} title="Skype" onClick={() => this.handleSelect(3, 'screen3')}>Skype</SidebarListButton>
+                        <SidebarListButton eventKey={4} title="Email" onClick={() => this.handleSelect(4, 'screen4')}>Email</SidebarListButton>
+                        <SidebarListButton eventKey={5} title="Telegram" onClick={() => this.handleSelect(5, 'screen5')}>Telegram</SidebarListButton>
+                        <SidebarListButton eventKey={6} title="Whatsapp" onClick={() => this.handleSelect(6, 'screen6')}>Whatsapp</SidebarListButton>
                     </div>
                 )
             // })
@@ -138,11 +138,11 @@ class Sidebar extends Component {
                     // </div>
 
                     <div bsStyle="tabs" activeKey={this.state.key}>
-                        <SidebarListButton eventKey={1} title="screen1" onClick={() => this.handleSelect(1, 'screen1')}>All</SidebarListButton>
-                        <SidebarListButton eventKey={3} title="screen3" onClick={() => this.handleSelect(3, 'screen3')}>Skype</SidebarListButton>
-                        <SidebarListButton eventKey={4} title="screen4" onClick={() => this.handleSelect(4, 'screen4')}>Email</SidebarListButton>
-                        <SidebarListButton eventKey={4} title="screen4" onClick={() => this.handleSelect(4, 'screen5')}>Telegram</SidebarListButton>
-                        <SidebarListButton eventKey={4} title="screen4" onClick={() => this.handleSelect(4, 'screen6')}>WhatsApp</SidebarListButton>
+                        <SidebarListButton eventKey={7} title="All" onClick={() => this.handleSelect(7, 'screen7')}>All</SidebarListButton>
+                        <SidebarListButton eventKey={3} title="Skype" onClick={() => this.handleSelect(3, 'screen8')}>Skype</SidebarListButton>
+                        <SidebarListButton eventKey={4} title="Email" onClick={() => this.handleSelect(4, 'screen9')}>Email</SidebarListButton>
+                        <SidebarListButton eventKey={4} title="Telegram" onClick={() => this.handleSelect(4, 'screen10')}>Telegram</SidebarListButton>
+                        <SidebarListButton eventKey={4} title="Whatsapp" onClick={() => this.handleSelect(4, 'screen11')}>WhatsApp</SidebarListButton>
                     </div>
                 )
             // })
