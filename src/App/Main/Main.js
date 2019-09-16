@@ -151,7 +151,7 @@ class Main extends Component {
                 console.log(id, "item")
                 return (
                     <div>
-                        <SidebarListButton onClick={this.toggleSecondaryDropdown}>{item}<i class="fas fa-chevron-down"></i></SidebarListButton>
+                        <SidebarListButton onClick={this.toggleSecondaryDropdown}>{item}<i className="fas fa-chevron-down"></i></SidebarListButton>
                         {item === "email" ? this.showSecondaryDropdown() : ''}
                     </div>
                 )
@@ -189,7 +189,7 @@ class Main extends Component {
                 <MainContainer>
                     <TopContainer>
                         <WelcomeBox />
-                        <i class="fas fa-cog fa-3x"></i>
+                        <i className="fas fa-cog fa-3x"></i>
                     </TopContainer>
                     <div>
                         {this.getScreen(this.state.currentScreen)}

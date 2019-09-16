@@ -6,15 +6,15 @@ import data from '../../../data/data.json';
 import CompleteSorted from '../AllSorted/CompleteSorted';
 
 const AllMessagesContainer = styled.div`
-    
+    border-bottom: 1px solid #fff;
 `;
 
 const MainMessagesContainer = styled.div`
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
+    align-items: center;
     color: #fff;
     padding: 20px 0;
-    border-bottom: 1px solid #fff;
 `;
 
 const Body = styled.p`
@@ -49,6 +49,12 @@ const Date = styled.p`
 const Priority = styled.p`
     font-size: 1.6rem;
     color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+
+    background-color: ${props=>props['background-color'] === 'priority-red' ? '#E10000' : ''};
+    background-color: ${props=>props['background-color'] === 'priority-yellow' ? '#E3B782' : ''};
+    background-color: ${props=>props['background-color'] === 'priority-green' ? '#247D74' : ''};
 `;
 
 const SenderContainer = styled.div`
@@ -123,10 +129,6 @@ const BoxButton = styled.button`
     text-align: left;
 `;
 
-const Test = styled.div`
-    width: 500px;
-`;
-
 const emails = data[0].applications.email;
 const whatsapp = data[0].applications.whatsapp;
 const telegram = data[0].applications.telegram;
@@ -134,32 +136,21 @@ const skype = data[0].applications.skype;
 
 const messages = emails.concat(whatsapp, telegram, skype);
 
-
+const sorted = whatsapp.sort(function(a, b) {
+    return b.priority - a.priority;
+});
 
 class WhatsappSorted extends Component {
-
+    
     constructor (props) {
         super(props)
-  
+        
         this.state = {
             id: '',
             type: '',
-            boxOpen: false,
-            color: 'red'
+            boxOpen: false
         };
     }
-
-    // handleBackgroundColor(priority) {
-    //     console.log(priority, "p")
-    //     if(priority > 0 && priority <= 33) {
-    //         this.setState({color: 'red'})
-    //     } else if
-    //         (priority > 33 && priority < 66) {
-    //             this.setState({color: 'yellow'})
-    //         }  else {
-    //             Z
-    //         }
-    // }
 
     handleBoxOpen(id) {
         // alert(id);
@@ -168,21 +159,25 @@ class WhatsappSorted extends Component {
         // Or
         // this.setState({ boxOpen: !this.state.boxOpen });
     }
-        
-        Messages = () => {
-        return skype.map((item, i) => {
 
-            const priority = item.priority;
-            
+        //sort over everything first, put in an array and then map
+        Messages = () => {
+        return sorted.map((item, i) => {
+            // this is where you decide the colors
+            let priorityClass = 'priority-red';
+            if (item.priority > 33) {
+                priorityClass = 'priority-yellow';
+            }
+            if (item.priority > 66) {
+                priorityClass = 'priority-green';
+            }
+
             return (
                 <AllMessagesContainer>
                     <MainMessagesContainer>
                         <BoxButtonContainer key={i} dataId={item.id}>
                             <BoxButton id={item.id} onClick={() => { this.handleBoxOpen(item.id); }}>
-                            <i class="far fa-plus-square"></i>
-                                {
-                                    this.state[item.id] ? <Test><CompleteSorted id={item.id} /> </Test> : ''
-                                }
+                            <i className="far fa-plus-square"></i>
                             </BoxButton>
                         </BoxButtonContainer>
                         <SenderContainer>
@@ -198,9 +193,15 @@ class WhatsappSorted extends Component {
                             <Date>{item.sentDate}</Date>
                         </DateContainer>
                         <DateContainer>
-                            <Priority style={{color: this.state.color}}>{priority}</Priority>
+                            <Priority 
+                                background-color={priorityClass}
+                            >{item.priority < 10 ? '0' + item.priority : item.priority}
+                            </Priority>
                         </DateContainer>
                     </MainMessagesContainer>
+                    {
+                        this.state[item.id] ? <div><CompleteSorted id={item.id} /> </div> : ''
+                    }
                 </AllMessagesContainer>
             )  
         })

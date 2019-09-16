@@ -158,8 +158,8 @@ class Sidebar extends Component {
         if(this.state.secondaryDropdown) {
             return (
                 <div>
-                    <SidebarListButton onClick={this.toggleSecondaryDropdown}>Sorted<i class="fas fa-chevron-down"></i></SidebarListButton>
-                    <SidebarListButton onClick={this.toggleSecondaryDropdown}>Pending<i class="fas fa-chevron-down"></i></SidebarListButton>
+                    <SidebarListButton onClick={this.toggleSecondaryDropdown}>Sorted<i className="fas fa-chevron-down"></i></SidebarListButton>
+                    <SidebarListButton onClick={this.toggleSecondaryDropdown}>Pending<i className="fas fa-chevron-down"></i></SidebarListButton>
                 </div>
             ) 
         }

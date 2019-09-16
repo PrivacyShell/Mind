@@ -6,7 +6,7 @@ import data from '../../../data/data.json';
 import CompleteInfoWhatsapp from '../../Messages/WhatsappMessages/CompleteInfoWhatsapp';
 
 const AllMessagesContainer = styled.div`
-    
+    border-bottom: 1px solid #fff;
 `;
 
 const MainMessagesContainer = styled.div`
@@ -14,7 +14,6 @@ const MainMessagesContainer = styled.div`
     /* justify-content: space-between; */
     color: #fff;
     padding: 20px 0;
-    border-bottom: 1px solid #fff;
 `;
 
 const Body = styled.p`
@@ -114,12 +113,14 @@ const BoxButtonContainer = styled.div`
     width: 20px;
 `;
 
-const BoxButton = styled.button`
+
+const BoxButton = styled.div`
     text-align: left;
 `;
 
+
 const Test = styled.div`
-    width: 500px;
+    /* width: 500px; */
 `;
 
 const emails = data[0].applications.email;
@@ -129,6 +130,12 @@ const skype = data[0].applications.skype;
 
 const messages = emails.concat(whatsapp, telegram, skype);
 
+const sorted = whatsapp.sort(function(a, b) {
+    return b - a;
+});
+
+console.log(sorted, "kkkk")
+
 
 
 class WhatsappMessages extends Component {
@@ -137,31 +144,38 @@ class WhatsappMessages extends Component {
         super(props)
   
         this.state = {
-            id: '',
+            // id: '',
             type: '',
-            boxOpen: false
+            boxOpen: false,
         };
     }
 
-    handleBoxOpen(id) {
-        // alert(id);
+    handleBoxOpen(id, e) {
         // Do something with the id for example
-        this.setState({ [id]: !this.state[id] });
+        if (this.state[id]) {
+            this.setState({
+                [id]: false,
+            })
+        } else {
+            this.setState({
+                [id]: true,
+            })
+        }
+        // old working solution
+        // this.setState({ [id]: !this.state[id] });
+
         // Or
         // this.setState({ boxOpen: !this.state.boxOpen });
     }
         
         Messages = () => {
-        return whatsapp.map((item, i) => {
+        return sorted.map((item, i) => {
             return (
                 <AllMessagesContainer>
                     <MainMessagesContainer>
                         <BoxButtonContainer key={i} dataId={item.id}>
-                            <BoxButton id={item.id} onClick={() => { this.handleBoxOpen(item.id); }}>
-                            <i class="far fa-plus-square"></i>
-                                {
-                                    this.state[item.id] ? <Test><CompleteInfoWhatsapp id={item.id} /> </Test> : ''
-                                }
+                            <BoxButton id={item.id} onClick={(e) => { this.handleBoxOpen(item.id, e); }}>
+                                <i className="far fa-plus-square"></i>
                             </BoxButton>
                         </BoxButtonContainer>
                         <SenderContainer>
@@ -177,6 +191,9 @@ class WhatsappMessages extends Component {
                             <Date>{item.sentDate}</Date>
                         </DateContainer>
                     </MainMessagesContainer>
+                        <div>
+                            { this.state[item.id] ? <Test><CompleteInfoWhatsapp id={item.id} /> </Test> : '' }
+                        </div>
                 </AllMessagesContainer>
             )  
         })
@@ -187,7 +204,7 @@ class WhatsappMessages extends Component {
             <MessagesContainer>
                 <HeaderContainer>
                     <HeaderSubContainer>
-                        <HeaderTitle>All Pending</HeaderTitle>
+                        <HeaderTitle>Whatsapp Pending</HeaderTitle>
                         <HeaderDesc>Priority</HeaderDesc>
                     </HeaderSubContainer>
                 </HeaderContainer>

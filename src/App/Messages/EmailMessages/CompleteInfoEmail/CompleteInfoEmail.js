@@ -8,11 +8,15 @@ const InfoContainer = styled.div`
     width: 45%;
 `;
 
+const InfoContainerAbove = styled.div`
+    width: 45%;
+    z-index: 100;
+`;
+
 const Heading = styled.h2`
     color: #fff;
     font-size: 2rem;
     text-align: left;
-    margin-top: 20px;
 `;
 
 const Message = styled.h2`
@@ -25,7 +29,7 @@ const Message = styled.h2`
 const InfoSection = styled.div`
     display: flex;
     justify-content: space-between; 
-    min-width: 820px;
+    /* min-width: 820px; */
 `;
 
 const emails = data[0].applications.email;
