@@ -252,15 +252,15 @@ class Sidebar extends Component {
                         {this.showDropdown()}
                     </SidebarButtonContainer> */}
                     <SidebarButtonContainer>
-                        <SidebarButton onClick={this.togglePendingDropdown}>Pending Applications</SidebarButton>
+                        <SidebarButton onClick={this.togglePendingDropdown}>Pending Sort</SidebarButton>
                         {this.showPendingDropdown()}
                     </SidebarButtonContainer>
                     <SidebarButtonContainer>
-                        <SidebarButton onClick={this.toggleSortedDropdown}>Sorted Applications</SidebarButton>
+                        <SidebarButton onClick={this.toggleSortedDropdown}>Sorted Messages</SidebarButton>
                         {this.showSortedDropdown()}
                     </SidebarButtonContainer>
                     <SidebarButtonContainer>
-                        <SidebarButton eventKey={2} title="screen2" onClick={() => this.handleSelect(2, 'screen2')}>Rewards</SidebarButton>
+                        <SidebarButton eventKey={2} title="screen2" onClick={() => this.handleSelect(2, 'screen2')}>Performance</SidebarButton>
                     </SidebarButtonContainer>
                     {/* <SidebarButtonContainer bsStyle="tabs" activeKey={this.state.key}>
                         <SidebarButton eventKey={1} title="screen1" onClick={() => this.handleSelect(1, 'screen1')}>All</SidebarButton>

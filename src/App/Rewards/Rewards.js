@@ -46,6 +46,15 @@ const RewardsTitle = styled.h2`
     text-transform: capitalize;
 `;
 
+const RewardsSmallPrint = styled.h2`
+    font-size: 1.6rem;
+    color: #fff;
+
+    span {
+        color: #237971;
+    }
+`;
+
 const RewardsDesc = styled.h2`
     font-size: 5rem;
     color: #237971;
@@ -120,7 +129,7 @@ class Rewards extends Component {
             <RewardsContainer>
                 <HeaderContainer>
                     <HeaderSubContainer>
-                        <HeaderTitle>My rewards</HeaderTitle>
+                        <HeaderTitle>Performance Period: Q1.1 (current)</HeaderTitle>
                     </HeaderSubContainer>
                 </HeaderContainer>
                 <MainContainer>
@@ -128,6 +137,7 @@ class Rewards extends Component {
                         <LeftSubcContainer>
                             <RewardsDesc>{rewards.total}</RewardsDesc>
                             <RewardsTitle>Total matches</RewardsTitle>
+                            <RewardsSmallPrint>of <span>703</span> sorted</RewardsSmallPrint>
                         </LeftSubcContainer>
                         <LeftSubcContainer>
                             <RewardsDesc>{rewards.pending}</RewardsDesc>

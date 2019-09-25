@@ -52,9 +52,9 @@ const Priority = styled.p`
     padding: 10px;
     border-radius: 50%;
 
-    background-color: ${props=>props['background-color'] === 'priority-red' ? '#E10000' : ''};
+    background-color: ${props=>props['background-color'] === 'priority-red' ? '#247D74' : ''};
     background-color: ${props=>props['background-color'] === 'priority-yellow' ? '#E3B782' : ''};
-    background-color: ${props=>props['background-color'] === 'priority-green' ? '#247D74' : ''};
+    background-color: ${props=>props['background-color'] === 'priority-green' ? '#E10000' : ''};
 `;
 
 const SenderContainer = styled.div`
